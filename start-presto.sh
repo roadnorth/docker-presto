@@ -32,7 +32,7 @@ setup_env() {
   : ${SERV_PORT:="18283"}
   : ${SERV_URI:="http://localhost:$SERV_PORT"}
   : ${NODE_ENV:="production"}
-  : ${NODE_ID:="`python -c 'import uuid; print uuid.uuid1()'`"}
+  : ${NODE_ID:="`python3 -c 'import uuid; print(uuid.uuid1())'`"}
   : ${CONF_DIR:="/data/presto/etc"}
   : ${DATA_DIR:="/data/presto/data"}
 
